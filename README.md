@@ -70,7 +70,7 @@ The application is containerized using docker, with all needed commands called w
 [Click Here!](https://github.com/SeifEldinHani/Instabug_backend_challenge/blob/main/Instabug%20Task%20Collection.postman_collection.json)
 
 # References 
-[Redis Increment](https://redis.io/commands/incr/)
-[Elasticsearch Ngram Analyzer](https://www.elastic.co/guide/en/elasticsearch/guide/current/ngrams-compound-words.html)
-[Rabbitmq Ruby Documentation](https://www.rabbitmq.com/tutorials/tutorial-one-ruby.html)
+[Redis Increment](https://redis.io/commands/incr/) \n
+[Elasticsearch Ngram Analyzer](https://www.elastic.co/guide/en/elasticsearch/guide/current/ngrams-compound-words.html) \n
+[Rabbitmq Ruby Documentation](https://www.rabbitmq.com/tutorials/tutorial-one-ruby.html) \n
 
