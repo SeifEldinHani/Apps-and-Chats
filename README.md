@@ -73,4 +73,4 @@ The application is containerized using docker, with all needed commands called w
 [Redis Increment](https://redis.io/commands/incr/)<br/>
 [Elasticsearch Ngram Analyzer](https://www.elastic.co/guide/en/elasticsearch/guide/current/ngrams-compound-words.html)<br/>
 [Rabbitmq Ruby Documentation](https://www.rabbitmq.com/tutorials/tutorial-one-ruby.html)<br/>
-
+[Docker wait for it guide](https://docs.docker.com/compose/startup-order/)
