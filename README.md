@@ -38,6 +38,10 @@ As promopted, I used elasticsearch in order to enable searching among messages w
 
 As Elasticsearch takes more time to start working, I used the wait-for-it.sh, which includes a bash script provided by docker in cases where containers depend on the startup of one another 
 
+# Docker 
+
+The application is containerized using docker, with all needed commands called while the container is starting. All you need to do is to run ```docker-compose run --build``` 
+
 
 # Request and response examples 
 
@@ -64,3 +68,5 @@ As Elasticsearch takes more time to start working, I used the wait-for-it.sh, wh
 # Postman Collection 
 
 [Click Here!](https://github.com/SeifEldinHani/Instabug_backend_challenge/blob/main/Instabug%20Task%20Collection.postman_collection.json)
+
+
