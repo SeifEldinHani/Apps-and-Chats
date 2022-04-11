@@ -8,5 +8,7 @@ class CreateMessages < ActiveRecord::Migration[7.0]
       t.timestamps
     end
     add_index :messages , :chat_number
+    add_index :messages , :message_number
+
   end
 end

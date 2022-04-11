@@ -39,6 +39,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_07_011940) do
     t.datetime "updated_at", null: false
     t.index ["app_token"], name: "fk_rails_bbc41ca7bc"
     t.index ["chat_number"], name: "index_messages_on_chat_number"
+    t.index ["message_number"], name: "index_messages_on_message_number"
   end
 
   add_foreign_key "chats", "apps", column: "app_token", primary_key: "app_token"
