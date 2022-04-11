@@ -40,7 +40,7 @@ As Elasticsearch takes more time to start working, I used the wait-for-it.sh, wh
 
 # Docker 
 
-The application is containerized using docker, with all needed commands called while the container is starting. All you need to do is to run ```docker-compose run --build``` 
+The application is containerized using docker, with all needed commands called while the container is starting. All you need to do is to run ```docker-compose up --build``` 
 
 
 # Request and response examples 
