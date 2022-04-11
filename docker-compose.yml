@@ -1,0 +1,72 @@
+services:
+  db:
+    platform: linux/x86_64
+    image: mysql:5.7
+    restart: on-failure
+    env_file:
+      - .envs/dev.env
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=chat_app
+      - MYSQL_USER=appuser
+      - MYSQL_PASSWORD=password
+    ports:
+      - "3307:3306"
+  rabbitmq:
+    image: rabbitmq:3.7.8
+    hostname: rabbitmq
+    restart: on-failure 
+    ports: 
+      - 5672:5672
+
+  redis:
+    restart: on-failure 
+    image: redis:3.2.11
+
+  elasticsearch:
+    image: elasticsearch:8.1.2
+    restart: always
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+    ports:
+      - "9300:9200"
+
+  app:
+    platform: linux/x86_64
+    restart: always
+    build: .
+    command: bash -c "sh wait-for-it.sh elasticsearch:9200 && sh init.sh"
+    volumes:
+      - ".:/app"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+      - rabbitmq
+      - redis
+      - elasticsearch
+
+    env_file:
+      - .envs/dev.env
+
+  sneakers:
+    platform: linux/x86_64
+    build: .
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+      - rabbitmq
+      - app
+      - redis
+
+    links: 
+      - rabbitmq 
+    command: bash -c "bundle exec rake rabbitmq:setup && bundle exec rake sneakers:run"
+    restart: on-failure
+  
+
+  
+
+
