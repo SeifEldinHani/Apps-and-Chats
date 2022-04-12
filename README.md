@@ -1,7 +1,7 @@
 # Instabug backend challenge
 
 
-I was promoted to develop an API that enables users to create apps and get an app token by which the user can create chats and send messages. I had no prior experience with Ruby or Ruby on Rails, so building a project with that scale was kind of challenging, as I tried my best to maintain best practices while being introduced to multiple new technologies. 
+I was propmted to develop an API that enables users to create apps and get an app token by which the user can create chats and send messages. I had no prior experience with Ruby or Ruby on Rails, so building a project with that scale was kind of challenging, as I tried my best to maintain best practices while being introduced to multiple new technologies. 
 
 
 
