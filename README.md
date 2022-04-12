@@ -18,7 +18,7 @@ I used indexing of main characterstics for each table (app_token for Apps, chat_
 
 # APIs
 
-The code includes APis for creation of Apps, which returns the app token for a provided app name. In addition, it contains APIs for creating chats and retireving all chats of a given app token. Finally, it contains APIs for creating messages, and retreiving messages through different approachs 
+The code includes APis for creation of Apps, which returns the app token for a provided app name. In addition, it contains APIs for creating chats and retireving all chats of a given app token (App token should be sent in headers). Finally, it contains APIs for creating messages, and retreiving messages through different approachs 
 
 1- Partial matching of a query in the messages of a given chat number and app token 
 2- Listing all the messages of a given chat number and app token 
