@@ -42,6 +42,10 @@ As Elasticsearch takes more time to start working, I used the wait-for-it.sh, wh
 
 The application is containerized using docker, with all needed commands called while the container is starting. All you need to do is to run ```docker-compose up --build``` 
 
+## IMPORTANT NOTE
+
+Because some images weren't compatible with M1, I had to specify a linux platform for some of the services running. Therefore, please check that both shell scripts in the repo has Unix EOF format if testing the code on a windows machine  
+
 
 # Request and response examples 
 
